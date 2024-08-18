@@ -1,0 +1,33 @@
+main {
+}
+
+:root{
+  --default-color: #888;
+  --active-color: #f00;
+}
+
+.likeBtn{
+  border: 2px solid var(--default-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 32px;
+  cursor: pointer;
+  font-weight: bold;
+  height: 30px;
+  padding: 4px 8px;
+  margin-bottom: 3px;
+  color: --default-color;
+  background-color: white;
+}
+
+.likeBtn:hover{
+  border-color: var(--active-color);
+  color: var(--active-color);
+}
+
+.liked,.liked:hover{
+  background-color: var(--active-color);
+  border-color: var(--active-color);
+  color: white;
+}
